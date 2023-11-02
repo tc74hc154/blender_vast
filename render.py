@@ -26,7 +26,8 @@ iface = gr.Interface(
     fn=start_blender,  # ファイルアップロード時に呼び出される関数
     inputs="file",     # ファイルのアップロードを許可
     outputs="text",    # テキストの出力を設定
-    live=True           # リアルタイムでアップロード可能にする
+    live=True,           # リアルタイムでアップロード可能にする
+    share=True
 )
 
 # インターフェースを開始
